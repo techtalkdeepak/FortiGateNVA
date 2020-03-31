@@ -1,0 +1,65 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "FortiGateName": {
+            "value": ""
+        },
+        "adminUsername": {
+            "value": ""
+        },
+        "adminPassword": {
+            "reference": {
+                "keyVault": {
+                  "id": "1"
+                },
+                "secretName": ""
+              }
+        },
+        "FortiGateImageSKU": {
+            "value": ""
+        },
+        "FortiGateImageVersion": {
+            "value": "latest"
+        },
+        "instanceType": {
+            "value": "Standard_F4s"
+        },
+        "publicIPAddressName": {
+            "value": ""
+        },
+        "publicIPNewOrExistingOrNone": {
+            "value": "new"
+        },
+        "publicIPResourceGroup": {
+            "value": ""
+        },
+        
+                "location": {
+            "value": ""
+        },
+        "vnetNewOrExisting": {
+            "value": "existing"
+        },
+        "vnetName": {
+            "value": ""
+        },
+        "vnetResourceGroup": {
+            "value": ""
+        },
+        
+        "Subnet1Name": {
+            "value": ""
+        },
+        "Subnet1Prefix": {
+            "value": ""
+        },
+        "Subnet2Name": {
+            "value": ""
+        },
+        "Subnet2Prefix": {
+            "value": ""
+        }
+        
+    }
+}
